@@ -116,6 +116,15 @@ kubectl describe services tomcat-load-balancer
 
 
 
+## Deployment commands
+
+kubectl get deployments
+
+kubectl rollout status
+
+kubectl set image
+
+kubectl rollout history
 
 
 
