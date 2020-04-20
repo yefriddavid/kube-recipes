@@ -128,3 +128,32 @@ kubectl rollout history
 
 
 
+minikube start -p donkey
+minikube start -p neddy
+
+sensible-browser $(minikube service tomcat-deployment --url)
+
+kubectl set image deployment/tomcat-deployment tomcat=tomcat:9.0.1
+
+kubectl set image deployment/tomcat-deployment tomcat=tomcat:9.0
+
+sensible-browser $(minikube service tomcat-deployment --url)
+
+kubectl describe node minikube
+
+kubectl describe node
+
+
+
+minikube dashboard
+
+
+run a mongo in 27017 port
+kubectl run mongo-excercise-1 --image=mongo --port=27017
+kubectl scale --replicas=4 deployment/mongo-exercise-1
+
+
+
+
+
+
